@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Experiments | Pudology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pudology HTML Learning Lab</h1>
+        <p>
+            Exploring HTML elements for CSE 134B
+            and how we can use them for Pudology.
+        </p>
+
+        <nav>
+            <a href="index.html">Back to Pudology Homepage</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- EXPERIMENT 1: ORDERED LIST -->
+        <section>
+            <h2>1. Ordered List Experiment</h2>
+
+            <p>
+                Tag: &lt;ol&gt;
+            </p>
+
+            <p>
+                Purpose: Displays steps in a numbered order.
+            </p>
+
+            <h3>Pudology Example: How to Enjoy Your Pudding</h3>
+
+            <ol>
+                <li>Choose your favorite pudding flavor.</li>
+                <li>Keep your pudding refrigerated.</li>
+                <li>Enjoy it chilled!</li>
+            </ol>
+
+            <p>
+                Future use: Instructions for ordering,
+                storing, or enjoying Pudology products.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIMENT 2: TEMPLATE -->
+        <section>
+            <h2>2. Template Experiment</h2>
+
+            <p>
+                Tag: &lt;template&gt;
+            </p>
+
+            <p>
+                Purpose: Stores reusable HTML content
+                without displaying it automatically.
+            </p>
+
+            <h3>Pudology Example: Reusable Pudding Card</h3>
+
+            <template id="pudding-template">
+                <article>
+                    <h3>Vanilla Velvet</h3>
+                    <p>A delicious protein avocado pudding.</p>
+                </article>
+            </template>
+
+            <p>
+                The Vanilla Velvet card is stored in the
+                template above, but it is intentionally hidden.
+            </p>
+
+            <p>
+                Future use: JavaScript could create
+                pudding product cards from this template.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIMENT 3: SPAN -->
+        <section>
+            <h2>3. Span Experiment</h2>
+
+            <p>
+                Tag: &lt;span&gt;
+            </p>
+
+            <p>
+                Purpose: Groups specific words within
+                a sentence without creating a new line.
+            </p>
+
+            <h3>Pudology Example: Highlighting Protein</h3>
+
+            <p>
+                Our Vanilla Velvet pudding contains
+                <span class="protein-amount">
+                    30g of protein
+                </span>
+                per serving.
+            </p>
+
+            <p>
+                Future use: CSS could highlight the protein
+                amount in green, while JavaScript could
+                update nutritional information.
+            </p>
+
+            <p>
+                Note: The span looks like normal text
+                until styling or functionality is added.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIMENT 4: DIV -->
+        <section>
+            <h2>4. Div Experiment</h2>
+
+            <p>
+                Tag: &lt;div&gt;
+            </p>
+
+            <p>
+                Purpose: Groups multiple elements together
+                without assigning a specific semantic meaning.
+            </p>
+
+            <h3>Pudology Example: Product Information Group</h3>
+
+            <div class="pudding-information">
+                <p><strong>Vanilla Velvet</strong></p>
+                <p>Protein avocado pudding</p>
+                <p>Made with vanilla and nutrient-dense ingredients.</p>
+            </div>
+
+            <p>
+                Future use: CSS could style this group
+                as a product card with a background,
+                border, and spacing.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 5: LINE BREAK -->
+        <section>
+            <h2>5. Line Break Experiment</h2>
+
+            <p>Tag: &lt;br&gt;</p>
+            <p>Purpose: Creates a line break without starting a new paragraph.</p>
+
+            <h3>Pudology Example: Contact Information</h3>
+
+            <p>
+                Pudology<br>
+                San Diego, California<br>
+                Instagram: @enjoypudology
+            </p>
+
+            <p>
+                Future use: Displaying addresses or short contact details
+                on multiple lines.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 6: ITALIC TEXT -->
+        <section>
+            <h2>6. Italic Text Experiment</h2>
+
+            <p>Tag: &lt;i&gt;</p>
+            <p>Purpose: Identifies text in an alternate voice or language.</p>
+
+            <h3>Pudology Example: Italian Expression</h3>
+
+            <p>
+                At Pudology, we believe in <i lang="it">buon appetito</i>!
+            </p>
+
+            <p>
+                Future use: Displaying foreign-language expressions
+                or special terms in product descriptions.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 7: BOLD TEXT -->
+        <section>
+            <h2>7. Bold Text Experiment</h2>
+
+            <p>Tag: &lt;b&gt;</p>
+            <p>Purpose: Draws attention to text without adding importance.</p>
+
+            <h3>Pudology Example: Featured Flavor</h3>
+
+            <p>
+                This week's featured flavor:
+                <b>Chocolate Peanut Butter</b>
+            </p>
+
+            <p>
+                Future use: Highlighting product names,
+                featured flavors, or keywords.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 8: NOSCRIPT -->
+        <section>
+            <h2>8. Noscript Experiment</h2>
+
+            <p>Tag: &lt;noscript&gt;</p>
+            <p>
+                Purpose: Provides alternative content when
+                JavaScript is unavailable.
+            </p>
+
+            <h3>Pudology Example: Community Rewards</h3>
+
+            <p>
+                In the future, Pudology may have an interactive
+                community rewards counter.
+            </p>
+
+            <noscript>
+                <p>
+                    JavaScript is disabled. You can still browse
+                    Pudology products and learn about our community!
+                </p>
+            </noscript>
+
+            <p>
+                Future use: Keeping important information accessible
+                when interactive features are unavailable.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 9: SVG -->
+        <section>
+            <h2>9. SVG Experiment</h2>
+
+            <p>Tag: &lt;svg&gt;</p>
+            <p>Purpose: Creates scalable graphics directly in HTML.</p>
+
+            <h3>Pudology Example: Avocado Illustration</h3>
+
+            <svg width="160" height="200" viewBox="0 0 160 200" role="img" aria-label="Illustration of an avocado">
+
+                <ellipse cx="80" cy="100" rx="65" ry="90" fill="#1E431F" />
+
+                <ellipse cx="80" cy="110" rx="48" ry="68" fill="#A8C66C" />
+
+                <circle cx="80" cy="125" r="28" fill="#8B5A2B" />
+
+            </svg>
+
+            <p>
+                Future use: Creating scalable icons,
+                illustrations, and decorative graphics
+                for the Pudology website.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 10: IFRAME -->
+        <section>
+            <h2>10. Iframe Experiment</h2>
+
+            <p>Tag: &lt;iframe&gt;</p>
+            <p>Purpose: Embeds another webpage or HTML document.</p>
+
+            <h3>Pudology Example: Featured Pudding Preview</h3>
+
+            <iframe title="Pudology Featured Pudding" width="350" height="180"
+                srcdoc="<h2>Vanilla Velvet</h2><p>Protein Avocado Pudding</p><p>Discover our delicious flavors!</p>">
+            </iframe>
+
+            <p>
+                Future use: Embedding maps, videos,
+                or other content on the Pudology website.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 11: AUDIO -->
+        <section>
+            <h2>11. Audio Experiment</h2>
+
+            <p>Tag: &lt;audio&gt;</p>
+            <p>Purpose: Adds audio content to a webpage.</p>
+
+            <h3>Pudology Example: Welcome Message</h3>
+
+            <audio controls>
+                <source src="Media/calm-background.mp3" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+
+            <p>
+                Future use: Sharing a welcome message,
+                product stories, or customer testimonials.
+            </p>
+        </section>
+
+        <hr>
+        <!-- EXPERIMENT 12: CANVAS -->
+        <section>
+            <h2>12. Canvas Experiment</h2>
+
+            <p>Tag: &lt;canvas&gt;</p>
+            <p>Purpose: Draws graphics using JavaScript.</p>
+
+            <h3>Pudology Example: Avocado Green Circle</h3>
+
+            <canvas id="pudology-canvas" width="200" height="120">
+                Your browser does not support canvas.
+            </canvas>
+
+            <script>
+                const canvas = document.getElementById("pudology-canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "#1E431F";
+                ctx.beginPath();
+                ctx.arc(100, 60, 45, 0, 2 * Math.PI);
+                ctx.fill();
+            </script>
+
+            <p>
+                Future use: Creating interactive graphics
+                and visualizing community milestones.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- EXPERIMENT 13: HOLIDAY CUSTOM ELEMENT -->
+        <section>
+            <h2>13. Holiday Highlight Custom Element</h2>
+            <p>Purpose: Display special holiday announcements.</p>
+
+            <pudology-holiday>
+                <h3>🎄 Pudology Christmas Special!</h3>
+                <p>Celebrate Christmas with our festive protein avocado puddings!</p>
+                <p>Holiday flavors coming soon!</p>
+            </pudology-holiday>
+
+            <p>Future use: Highlighting Christmas, Valentine's Day,
+                and other seasonal Pudology specials.</p>
+        </section>
+        <section>
+            <h2>14. Video Experiment</h2>
+            <p>Tags: &lt;video&gt; and &lt;source&gt;</p>
+            <p>Purpose: Display a video on a webpage.</p>
+
+            <h3>Pudology Brand Video</h3>
+
+            <video controls width="350">
+                <source src="Media/Pudology-CSE 134B.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+
+            <p>Future use: Introducing Pudology to new customers.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Pudology | CSE 134B HTML Experiments</p>
+        <a href="index.html">Return to Homepage</a>
+    </footer>
+    <pudology-greeting></pudology-greeting>
+
+    <script>
+        customElements.define("pudology-greeting", class extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello World!");
+            }
+        });
+    </script>
+</body>
+
+</html>

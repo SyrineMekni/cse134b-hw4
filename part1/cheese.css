@@ -1,0 +1,55 @@
+/* Syrine Mekni
+   Repository: https://github.com/SyrineMekni/cse134b-hw3
+*/
+
+body {
+    font-family: Georgia, serif;
+    color: #1E431F;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    background-color: #D99A24;
+}
+body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+blockquote {
+    border: 4px groove #D99A24;
+    margin: 20px;
+    padding: 15px;
+}
+a:hover {
+    color: #D99A24;
+}
+a:focus, 
+input:focus,
+button:focus {
+    outline: 3px solid #1E431F;
+    outline-offset: 3px ;
+}
+
+/* Cascade in action */
+/* The second rule wins because it comes after the first rule, so it overrides it.  */
+
+h1 {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}

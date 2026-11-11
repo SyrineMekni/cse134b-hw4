@@ -1,0 +1,135 @@
+/* Syrine Mekni - Pudology website - HW3 Part 2 */
+
+/* set variables */
+:root {
+    --avocado-green: #1E431F;
+    --cream: #FFFCF2;
+    --turmeric-gold: #D99A16;
+    --beet-pink: #C83F68;
+    --spirulina-blue: #0047A1;
+    --light-avocado-green: #7F963D;
+    --cacao-brown: #482919;
+}
+
+
+body {
+    background-color: #FFFCF2;
+    color: black;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0px;
+}
+
+/*center all the content page */
+header, main, footer {
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Make all headers green */
+h1, h2, h3 {
+    color: var(--avocado-green);
+    /*text-align: center;*/
+}
+/* set headers size */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+
+header {
+    padding: 32px;
+}
+
+main {
+    padding: 32px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+footer {
+    padding: 32px;
+}
+nav a {
+    padding: 0.5em;
+}
+/* use root variable in Footer */ 
+/* Social Media link */
+footer a[href*="instagram"] {
+    color: var(--beet-pink);
+}
+
+/* Contact Us link */
+footer a[href*="contact"] {
+    color: var(--cacao-brown);
+}
+
+/* FAQ link */
+footer a[href*="faq"] {
+    color: var(--turmeric-gold);
+}
+
+/* Switch to vertical layout on mobile */
+@media (max-width: 640px) {
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
+/* Make video fit in 357px */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Descendant combinator: pad all navigation links */
+nav a {
+    padding: 0.5em;
+}
+
+/* Child combinator: pad every paragraph insde the footer*/
+footer > p {
+    margin-bottom: 0.5rem;
+}
+/* Changes link color when the mouse hovers over it */
+a:hover {
+    color: var(--avocado-green);
+}
+
+/* Highlights links when navigating with the keyboard */
+a:focus-visible {
+    outline: 3px solid var(--avocado-green);
+}
+
+pudology-holiday {
+            display: block;
+            color: #1E431F;
+            border: 3px solid #C62828;
+            padding: 15px;
+        }
+
+
