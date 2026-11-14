@@ -9,47 +9,53 @@
 </head>
 
 <body>
-    
-<header>
-    <img src="Media/logo%20with%20slogan.png"
-         alt="Pudology logo" width="180">
+    <header>
+        <img src="Media/logo%20with%20slogan.png"
+             alt="Pudology logo" width="180">
 
-    <nav aria-label="Main navigation">
-        <a href="index.html">Home</a>
-        <a href="why-pudology.html">Why Pudology?</a>
-        <a href="about.html">Our Story</a>
-        <a href="puddings.html">Signature Puddings</a>
-        <a href="treats.html">Superfood Treats</a>
-        <a href="bundles.html">Gift Sets &amp; Bundles</a>
-        <a href="locations.html">Find Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="form-no-js.html">Contact Form</a>
-        <a href="faq.html">FAQ</a>
-        <a href="experiments.html">HTML Experiments</a>
-    </nav>
-</header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="why-pudology.html">Why Pudology?</a>
+            <a href="about.html">Our Story</a>
+            <a href="puddings.html">Signature Puddings</a>
+            <a href="treats.html">Superfood Treats</a>
+            <a href="bundles.html">Gift Sets &amp; Bundles</a>
+            <a href="locations.html">Find Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="form-no-js.html">Contact Form</a>
+            <a href="faq.html">FAQ</a>
+            <a href="experiments.html">HTML Experiments</a>
+        </nav>
+    </header>
 
     <main>
         <h1>Contact Us</h1>
         <p>Have a question, suggestion, or feedback? Send us a message!</p>
+        <p>* Indicates a required field.</p>
 
         <form action="https://httpbin.org/post" method="post">
             <div class="form-group">
-                <label for="name">Your Name:</label>
+                <label for="name">
+                    Your Name <span class="star-beet">*</span>
+                </label>
                 <input type="text" id="name" name="name"
-                       autocomplete="name">
+                       autocomplete="name" required>
             </div>
 
             <div class="form-group">
-                <label for="email">Email Address:</label>
+                <label for="email">
+                    Email Address <span class="star-turmeric">*</span>
+                </label>
                 <input type="email" id="email" name="email"
-                       autocomplete="email">
+                       autocomplete="email" required>
             </div>
 
             <div class="form-group">
-                <label for="comments">Your Message:</label>
+                <label for="comments">
+                    Your Message <span class="star-avocado">*</span>
+                </label>
                 <textarea id="comments" name="comments"
-                          rows="6"></textarea>
+                          rows="6" required></textarea>
             </div>
 
             <input type="hidden" name="possible_bot" value="true">
