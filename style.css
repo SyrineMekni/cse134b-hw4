@@ -17,7 +17,10 @@ body {
     background-color: #FFFCF2;
     color: black;
     font-family: Georgia, serif;
-    font-size: 1rem;
+    font-size: 1rem;.form-intro {
+    color: var(--turmeric-gold);
+    text-align: center;
+}
     line-height: 1.7;
     margin: 0;
     padding: 0px;
