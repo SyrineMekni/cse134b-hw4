@@ -25,8 +25,7 @@ button.addEventListener("click", () => {
     button.textContent = theme === "dark"
         ? "Switch to Light Mode"
         : "Switch to Dark Mode";
-// this error if the heme still changes if storage is unavailable.
-    try {
+// Keep the theme switcher working if localStorage is unavailable.
         localStorage.setItem("theme", theme);
     } catch (error) {
     }
