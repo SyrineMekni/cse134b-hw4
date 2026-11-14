@@ -1,5 +1,5 @@
-/* Syrine Mekni - Pudology website - HW3 Part 2 */
 
+/* Syrine Mekni - Pudology website - HW3 Part 2 */
 /* set variables */
 :root {
     --avocado-green: #1E431F;
@@ -260,16 +260,6 @@ body a {
 @view-transition {
     navigation: auto;
 }
-
-
-@media (prefers-reduced-motion: reduce) {
-    ::view-transition-old(root),
-    ::view-transition-new(root) {
-        animation-duration: 0.01ms;
-    }
-}
-
-
 
 /* smoother transition  */
 
