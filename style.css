@@ -14,8 +14,8 @@
 
 
 body {
-    background-color: #FFFCF2;
-    color: black;
+    background-color: var(--page-bg);
+    color: var(--page-text);
     font-family: Georgia, serif;
     font-size: 1rem;.form-intro {
     color: var(--turmeric-gold);
@@ -39,8 +39,7 @@ nav {
 
 /* Make all headers green */
 h1, h2, h3 {
-    color: var(--avocado-green);
-    /*text-align: center;*/
+    color: var(--heading-color);
 }
 /* set headers size */
 h1 {
@@ -159,9 +158,9 @@ form {
     width: 100%;
     box-sizing: border-box;
     padding: 0.75rem;
-    border: 1px solid var(--avocado-green);
-    border-radius: 5px;
-    font: inherit;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
+    color: var(--input-text);
 }
 
 .form-group input:focus-visible,
@@ -232,7 +231,7 @@ form button:hover {
 }
 
 
-/* Part 4 - Light theme */
+/* Part 4 - setting Light theme */
 --page-bg: var(--cream);
 --page-text: black;
 --heading-color: var(--avocado-green);
@@ -240,6 +239,33 @@ form button:hover {
 --input-bg: white;
 --input-text: black;
 --input-border: var(--avocado-green);
+
+
+
+/* Part 4 - setting Dark Theme */
+
+[data-theme="dark"] {
+    --page-bg: var(--cacao-brown);
+    --page-text: var(--cream);
+    --heading-color: var(--turmeric-gold);
+    --link-color: var(--turmeric-gold);
+    --input-bg: #382116;
+    --input-text: var(--cream);
+    --input-border: var(--turmeric-gold);
+}
+
+body a {
+    color: var(--link-color);
+}
+
+
+
+
+
+
+
+
+
 
 
 
