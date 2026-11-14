@@ -9,6 +9,7 @@
     --spirulina-blue: #0047A1;
     --light-avocado-green: #7F963D;
     --cacao-brown: #482919;
+    --terracotta: #B65F46;
 }
 
 
@@ -204,4 +205,28 @@ form button:hover {
 .comments-limit {
     color: var(--avocado-green);
 }
+
+.form-intro {
+    color: var(--turmeric-gold);
+    text-align: center;
+}
+
+.form-intro span {
+    display: block;
+}
+
+
+/* HW4 Part 2 - Form Validation */
+
+.form-group input:user-invalid,
+.form-group textarea:user-invalid {
+    border-color: var(--terracotta);
+}
+
+.form-group input:user-valid,
+.form-group textarea:user-valid {
+    border-color: var(--avocado-green);
+}
+
+
 
