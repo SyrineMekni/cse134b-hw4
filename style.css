@@ -27,14 +27,12 @@ body {
     background-color: var(--page-bg);
     color: var(--page-text);
     font-family: Georgia, serif;
-    font-size: 1rem;.form-intro {
-    color: var(--turmeric-gold);
-    text-align: center;
-}
+    font-size: 1rem;
     line-height: 1.7;
     margin: 0;
-    padding: 0px;
+    padding: 0;
 }
+
 
 /*center all the content page */
 header, main, footer {
@@ -128,15 +126,16 @@ nav a {
 footer > p {
     margin-bottom: 0.5rem;
 }
-/* Changes link color when the mouse hovers over it */
+
+
 a:hover {
-    color: var(--avocado-green);
+    color: var(--link-color);
 }
 
-/* Highlights links when navigating with the keyboard */
 a:focus-visible {
-    outline: 3px solid var(--avocado-green);
+    outline: 3px solid var(--heading-color);
 }
+
 
 pudology-holiday {
             display: block;
@@ -239,18 +238,6 @@ form button:hover {
 .form-group textarea:user-valid {
     border-color: var(--avocado-green);
 }
-
-
-/* Part 4 - setting Light theme */
---page-bg: var(--cream);
---page-text: black;
---heading-color: var(--avocado-green);
---link-color: var(--avocado-green);
---input-bg: white;
---input-text: black;
---input-border: var(--avocado-green);
-
-
 
 /* Part 4 - setting Dark Theme */
 
