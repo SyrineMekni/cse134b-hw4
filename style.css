@@ -197,3 +197,11 @@ form button:hover {
     font-weight: bold;
 }
 
+.name-limit {
+    color: var(--beet-pink);
+}
+
+.comments-limit {
+    color: var(--avocado-green);
+}
+
