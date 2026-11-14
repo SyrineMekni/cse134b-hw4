@@ -10,6 +10,16 @@
     --light-avocado-green: #7F963D;
     --cacao-brown: #482919;
     --terracotta: #B65F46;
+    
+    /* Light theme */
+    --page-bg: var(--cream);
+    --page-text: black;
+    --heading-color: var(--avocado-green);
+    --link-color: var(--avocado-green);
+    --input-bg: white;
+    --input-text: black;
+    --input-border: var(--avocado-green);
+
 }
 
 
