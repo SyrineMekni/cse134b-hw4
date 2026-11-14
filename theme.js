@@ -29,6 +29,5 @@ button.addEventListener("click", () => {
     try {
         localStorage.setItem("theme", theme);
     } catch (error) {
-        /
     }
 });
