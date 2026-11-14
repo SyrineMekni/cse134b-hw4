@@ -180,4 +180,20 @@ form button:hover {
     background-color: var(--cacao-brown);
 }
 
+/* HW4 Part 2 - Required Field Stars */
+
+.star-beet {
+    color: var(--beet-pink);
+    font-weight: bold;
+}
+
+.star-turmeric {
+    color:var(--turmeric-gold);
+    font-weight: bold;
+}
+
+.star-avocado {
+    color: var(--avocado-green);
+    font-weight: bold;
+}
 
