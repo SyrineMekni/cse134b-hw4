@@ -9,9 +9,9 @@
     --spirulina-blue: #0047A1;
     --light-avocado-green: #7F963D;
     --cacao-brown: #482919;
-    --terracotta: #B65F46;
     
     /* Light theme */
+    --terracotta: #B65F46;
     --page-bg: var(--cream);
     --page-text: black;
     --heading-color: var(--avocado-green);
@@ -256,10 +256,6 @@ body a {
 }
 
 
-/* View Transitions */
-@view-transition {
-    navigation: auto;
-}
 
 /* smoother transition  */
 
