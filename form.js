@@ -17,6 +17,7 @@ form.addEventListener("submit", function(event) {
 comments.addEventListener("input", function() {
     const messageLength = comments.value.length;
     const remaining = comments.maxLength - messageLength;
+    counter.classList.toggle("warning", remaining <= 100);
     counter.textContent = remaining + " characters remaining";
     if (remaining === 0) {
     counter.textContent = "Oops!Character limit reached.";
