@@ -18,4 +18,9 @@ comments.addEventListener("input", function() {
     const messageLength = comments.value.length;
     const remaining = comments.maxLength - messageLength;
     counter.textContent = remaining + " characters remaining";
+    if (remaining === 0) {
+    counter.textContent = "Oops!Character limit reached.";
+} else if (remaining <= 100) {
+    counter.textContent = "Warning: Only " + remaining + " characters remaining.";
+}
 });
