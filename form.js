@@ -43,15 +43,28 @@ function validateField(field) {
 }
 
 const fields = form.querySelectorAll("#name, #email, #comments");
+const touchedFields = new Set();
+let submitted = false;
 
 fields.forEach(function(field) {
+    let edited = false;
+
+    field.addEventListener("input", function() {
+        edited = true;
+        if (!document.querySelector("#error-area").hidden) {
+        validateField(field);
+        showErrors();
+       }
+    });
+
     field.addEventListener("blur", function() {
-        if (field.value.length > 0) {
+        if (edited) {
+            touchedFields.add(field);
             validateField(field);
+            showErrors();
         }
     });
 });
-
 function showErrors() {
     const errorArea = document.querySelector("#error-area");
     const errorList = document.querySelector("#error-list");
@@ -59,7 +72,7 @@ function showErrors() {
     errorList.replaceChildren();
 
     fields.forEach(function(field) {
-        if (!field.validity.valid) {
+        if ((submitted || touchedFields.has(field)) && !field.validity.valid) {
             const item = document.createElement("li");
             item.textContent = field.labels[0].textContent.trim()
                 + ": " + field.validationMessage;
