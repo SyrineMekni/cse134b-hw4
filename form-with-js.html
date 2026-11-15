@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Pudology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="Media/logo%20with%20slogan.png"
+             alt="Pudology logo" width="180">
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="why-pudology.html">Why Pudology?</a>
+            <a href="about.html">Our Story</a>
+            <a href="puddings.html">Signature Puddings</a>
+            <a href="treats.html">Superfood Treats</a>
+            <a href="bundles.html">Gift Sets &amp; Bundles</a>
+            <a href="locations.html">Find Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="form-no-js.html">Contact Form</a>
+            <a href="faq.html">FAQ</a>
+            <a href="experiments.html">HTML Experiments</a>
+        </nav>
+<button id="theme-toggle" type="button" hidden>
+    Switch to Dark Mode
+</button>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p class="form-intro">
+    Have a question, suggestion, or feedback?
+    <span>Send us a message!</span>
+</p>
+    
+
+        <form action="https://httpbin.org/post" method="post">
+            <div class="form-group">
+                <label for="name">
+                    Your Name <span class="star-beet">*</span>
+                </label>
+                <input type="text" id="name" name="name" autocomplete="name" required minlength="1" maxlength="100">
+                <small class="name-limit">1–100 characters</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">
+                    Email Address <span class="star-turmeric">*</span>
+                </label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">
+                    Your Message <span class="star-avocado">*</span>
+                </label>
+                <textarea id="comments" name="comments" rows="6" required minlength="10" maxlength="1000"></textarea>
+                <small class="comments-limit">10–1,000 characters</small>
+            </div>
+            <p>* Indicates a required field.</p>
+
+            <input type="hidden" name="possible_bot" value="true">
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://www.instagram.com/enjoypudology/">
+                Social Media
+            </a> |
+            <a href="contact.html">Contact Us</a> |
+            <a href="faq.html">FAQ</a>
+        </p>
+        <p>&copy; 2026 Pudology</p>
+    </footer>
+    <script src="theme.js"></script>
+</body>
+</html>
