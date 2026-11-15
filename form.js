@@ -4,6 +4,7 @@ const form = document.querySelector("form");
 const comments = document.querySelector("#comments");
 const counter = document.querySelector("#character-counter");
 counter.hidden = false;
+counter.textContent = comments.maxLength + " characters remaining";
 
 form.addEventListener("submit", function(event) {
     console.log("Form submitted!");
