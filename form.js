@@ -27,3 +27,45 @@ comments.addEventListener("input", function() {
     counter.textContent = "Warning: Only " + remaining + " characters remaining.";
 }
 });
+
+function validateField(field) {
+    field.setCustomValidity("");
+
+    if (field.validity.valueMissing) {
+        field.setCustomValidity("This field is required.");
+    } else if (field.validity.typeMismatch) {
+        field.setCustomValidity("Please enter a valid email address.");
+    } else if (field.validity.tooShort) {
+        field.setCustomValidity(
+            "Please enter at least " + field.minLength + " characters."
+        );
+    }
+}
+
+const fields = form.querySelectorAll("#name, #email, #comments");
+
+fields.forEach(function(field) {
+    field.addEventListener("blur", function() {
+        if (field.value.length > 0) {
+            validateField(field);
+        }
+    });
+});
+
+function showErrors() {
+    const errorArea = document.querySelector("#error-area");
+    const errorList = document.querySelector("#error-list");
+
+    errorList.replaceChildren();
+
+    fields.forEach(function(field) {
+        if (!field.validity.valid) {
+            const item = document.createElement("li");
+            item.textContent = field.labels[0].textContent.trim()
+                + ": " + field.validationMessage;
+            errorList.appendChild(item);
+        }
+    });
+
+    errorArea.hidden = errorList.children.length === 0;
+}
