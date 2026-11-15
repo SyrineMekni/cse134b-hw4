@@ -3,6 +3,7 @@ const form_errors = [];
 const form = document.querySelector("form");
 const comments = document.querySelector("#comments");
 const nameInput = document.querySelector("#name");
+console.log(nameInput.validity.valid);
 const counter = document.querySelector("#character-counter");
 counter.hidden = false;
 counter.textContent = comments.maxLength + " characters remaining";
