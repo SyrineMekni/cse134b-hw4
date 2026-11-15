@@ -271,14 +271,6 @@ form.querySelector('button[type="submit"]').addEventListener("click", attemptSub
 // Also check the form when the customer submits using the Enter key.
 form.addEventListener("keydown", function(event) {
 
-    // Do not treat Enter inside the comments box as a submission attempt.
-    if (event.key === "Enter" &&
-        event.target.tagName !== "TEXTAREA") {
-        attemptSubmit();
-    }
-});
-
-
 // --------------------------------------------------
 // 9. SEND THE ERROR HISTORY WITH A VALID FORM
 // --------------------------------------------------
