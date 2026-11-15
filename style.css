@@ -274,6 +274,12 @@ body a {
 }
 
 
+#character-counter.warning {
+    color: var(--terracotta);
+    font-weight: bold;
+}
+
+
 
 
 
