@@ -61,8 +61,16 @@
                 </label>
                 <textarea id="comments" name="comments" rows="6" required minlength="10" maxlength="1000"></textarea>
                 <small class="comments-limit">10–1,000 characters</small>
-                <small id="character-counter" hidden></small>
             </div>
+            <div id="error-area" role="status" aria-live="polite" hidden>
+    <strong>Form Errors:</strong>
+    <ul id="error-list"></ul>
+</div>
+
+<div id="info-area">
+    <strong>Message Information:</strong>
+    <p id="character-counter" hidden></p>
+</div>
             <p>* Indicates a required field.</p>
 
             <input type="hidden" name="possible_bot" value="true">
