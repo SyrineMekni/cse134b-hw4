@@ -268,9 +268,6 @@ function attemptSubmit() {
 // Check the form when the customer clicks the Submit button.
 form.querySelector('button[type="submit"]').addEventListener("click", attemptSubmit);
 
-// Also check the form when the customer submits using the Enter key.
-form.addEventListener("keydown", function(event) {
-
 // --------------------------------------------------
 // 9. SEND THE ERROR HISTORY WITH A VALID FORM
 // --------------------------------------------------
