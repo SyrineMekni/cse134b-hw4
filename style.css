@@ -263,14 +263,16 @@ body a {
 
 
 
-/* smoother transition  */
+/* smoother transition  
 
 ::view-transition-old(root),
 ::view-transition-new(root) {
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
 }
+*/
 
+animation-duration: 3s;
 
 @media (prefers-reduced-motion: reduce) {
     ::view-transition-old(root),
