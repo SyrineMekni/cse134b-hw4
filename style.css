@@ -240,7 +240,6 @@ form button:hover {
 }
 
 /* Part 4 - setting Dark Theme */
-
 [data-theme="dark"] {
     --page-bg: var(--cacao-brown);
     --page-text: var(--cream);
@@ -249,7 +248,14 @@ form button:hover {
     --input-bg: #382116;
     --input-text: var(--cream);
     --input-border: var(--turmeric-gold);
+    --terracotta: #FF9A80;
 }
+
+[data-theme="dark"] .comments-limit,
+[data-theme="dark"] .star-avocado {
+    color: #A8D68D;
+}
+
 
 body a {
     color: var(--link-color);
@@ -279,7 +285,9 @@ body a {
     font-weight: bold;
 }
 
-
+[data-theme="dark"] footer a[href*="contact"] {
+    color: var(--cream);
+}
 
 
 
