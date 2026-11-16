@@ -1,7 +1,12 @@
-| Field | Value |
-| :--- | :--- |
-| Repository URL | https://github.com/SyrineMekni/cse134b-hw3 |
-| Part 1 Deployed URL | https://pudology-cse134b-hw3.netlify.app/part1/cheese.html |
-| Part 2 Deployed URL | https://pudology-cse134b-hw3.netlify.app/ |
 
-# cse134b-hw3
+# CSE 134B — Homework 4
+
+## Repository
+https://github.com/SyrineMekni/cse134b-hw4
+
+## Deployed Website
+https://cse134b-hw4-6l1.pages.dev/
+
+## Contact Forms
+- Without JavaScript: form-no-js.html
+- With JavaScript: form-with-js.html
