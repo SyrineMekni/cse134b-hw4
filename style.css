@@ -261,19 +261,20 @@ body a {
     color: var(--link-color);
 }
 
-
-
-/* smoother transition  
-
+/* Smooth transition between light and dark themes */
 ::view-transition-old(root),
 ::view-transition-new(root) {
-    animation-duration: 0.8s;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
 }
-*/
 
-animation-duration: 3s;
-
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root) {
+        animation-duration: 0.01ms;
+    }
+}
 @media (prefers-reduced-motion: reduce) {
     ::view-transition-old(root),
     ::view-transition-new(root) {
