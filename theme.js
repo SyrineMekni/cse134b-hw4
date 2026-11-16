@@ -20,14 +20,27 @@ button.hidden = false;
 button.addEventListener("click", () => {
     theme = theme === "light" ? "dark" : "light";
 
-    document.documentElement.dataset.theme = theme;
+    function applyTheme() {
+        document.documentElement.dataset.theme = theme;
 
-    button.textContent = theme === "dark"
-        ? "Switch to Light Mode"
-        : "Switch to Dark Mode";
-// Keep the theme switcher working if localStorage is unavailable.
+        button.textContent = theme === "dark"
+            ? "Switch to Light Mode"
+            : "Switch to Dark Mode";
+    }
+
+    if (document.startViewTransition) {
+        document.startViewTransition(applyTheme);
+    } else {
+        applyTheme();
+    }
+
     try {
         localStorage.setItem("theme", theme);
     } catch (error) {
+        // The theme still works if storage is unavailable.
     }
 });
+
+
+
+
