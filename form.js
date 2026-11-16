@@ -23,9 +23,7 @@ const touchedFields = new Set();
 let submitted = false;
 
 
-// --------------------------------------------------
-// 1. SHOW THE INFORMATION AREA
-// --------------------------------------------------
+
 
 // Show the information area and character counter when JavaScript is enabled,
 // so customers can see how many characters they have left while typing.
@@ -33,10 +31,9 @@ document.querySelector("#info-area").hidden = false;
 counter.hidden = false;
 
 
-// --------------------------------------------------
-// 2. UPDATE THE CHARACTER COUNTER
-// --------------------------------------------------
 
+
+// 2. UPDATE THE CHARACTER COUNTER
 // Keep track of how many characters the customer has left.
 // When the customer gets close to the limit, show a warning.
 // When the limit is reached, let the customer know they cannot type more.
@@ -63,10 +60,8 @@ updateCounter();
 comments.addEventListener("input", updateCounter);
 
 
-// --------------------------------------------------
-// 3. CHECK WHETHER A FIELD IS VALID
-// --------------------------------------------------
 
+// 3. CHECK WHETHER A FIELD IS VALID
 // Check one field to make sure the customer entered valid information.
 // If something is wrong, prepare a message explaining what needs to be fixed.
 function validateField(field) {
@@ -93,10 +88,8 @@ function validateField(field) {
 }
 
 
-// --------------------------------------------------
-// 4. DISPLAY ERROR MESSAGES TO THE CUSTOMER
-// --------------------------------------------------
 
+// 4. DISPLAY ERROR MESSAGES TO THE CUSTOMER
 // Show customers which fields have errors and what they need to correct.
 // Only show errors after a submission attempt or after editing and leaving a field.
 function showErrors() {
@@ -154,10 +147,8 @@ function showErrors() {
 }
 
 
-// --------------------------------------------------
-// 5. CHECK FIELDS WHILE CUSTOMERS FILL OUT THE FORM
-// --------------------------------------------------
 
+// 5. CHECK FIELDS WHILE CUSTOMERS FILL OUT THE FORM
 // Watch each field as the customer types or moves to another field.
 fields.forEach(function(field) {
 
@@ -194,11 +185,7 @@ fields.forEach(function(field) {
     });
 });
 
-
-// --------------------------------------------------
 // 6. DETECT INVALID FORM SUBMISSIONS
-// --------------------------------------------------
-
 // When the browser finds an invalid field during submission,
 // remember that the customer tried to submit and show the errors.
 form.addEventListener("invalid", function(event) {
@@ -215,10 +202,8 @@ form.addEventListener("invalid", function(event) {
 }, true);
 
 
-// --------------------------------------------------
-// 7. SAVE THE CUSTOMER'S VALIDATION ERRORS
-// --------------------------------------------------
 
+// 7. SAVE THE CUSTOMER'S VALIDATION ERRORS
 // Record the errors found during a failed submission attempt.
 // Save the field name and error message, not the customer's personal information.
 function recordErrors() {
@@ -238,10 +223,8 @@ function recordErrors() {
 }
 
 
-// --------------------------------------------------
-// 8. CHECK WHEN THE CUSTOMER TRIES TO SUBMIT
-// --------------------------------------------------
 
+// 8. CHECK WHEN THE CUSTOMER TRIES TO SUBMIT
 // Check the entire form when the customer tries to submit it.
 // If there are errors, record them and show what needs to be corrected.
 function attemptSubmit() {
@@ -268,10 +251,8 @@ function attemptSubmit() {
 // Check the form when the customer clicks the Submit button.
 form.querySelector('button[type="submit"]').addEventListener("click", attemptSubmit);
 
-// --------------------------------------------------
-// 9. SEND THE ERROR HISTORY WITH A VALID FORM
-// --------------------------------------------------
 
+// 9. SEND THE ERROR HISTORY WITH A VALID FORM
 // When the customer successfully submits a valid form,
 // attach the saved error history so it can be sent with the form.
 form.addEventListener("submit", function() {
